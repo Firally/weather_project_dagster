@@ -1,6 +1,6 @@
 from dagster import job
-from weather_project_dagster.assets.fetch_hourly_sample import fetch_hourly_sample
-from weather_project_dagster.assets.collect_data import setup_directories, process_hourly_sample
+from assets.fetch_hourly_sample import fetch_hourly_sample
+from assets.collect_data import setup_directories, process_hourly_sample
 
 @job
 def data_collection_job():
